@@ -1,0 +1,67 @@
+---
+robots:
+- id: 1
+  name: 
+  city: 
+  state: 
+  avatar: 
+  birthdate: 
+  date_hired: 
+  department: 
+- id: 2
+  name: 
+  city: 
+  state: 
+  avatar: 
+  birthdate: 
+  date_hired: 
+  department: 
+- id: 3
+  name: 
+  city: 
+  state: 
+  avatar: 
+  birthdate: 
+  date_hired: 
+  department: 
+- id: 4
+  name: dan
+  city: ''
+  state: ''
+  avatar: ''
+  birthdate: ''
+  date_hired: ''
+  department: ''
+- id: 5
+  name: dan
+  city: ''
+  state: ''
+  avatar: ''
+  birthdate: ''
+  date_hired: ''
+  department: ''
+- id: 6
+  name: ''
+  city: ''
+  state: ''
+  avatar: ''
+  birthdate: ''
+  date_hired: ''
+  department: ''
+- id: 7
+  name: ''
+  city: ''
+  state: fjsd;lfjds
+  avatar: ''
+  birthdate: ''
+  date_hired: ''
+  department: ''
+- id: 8
+  name: ''
+  city: ''
+  state: ''
+  avatar: ''
+  birthdate: ''
+  date_hired: ''
+  department: ''
+total: 8
