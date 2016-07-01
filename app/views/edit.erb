@@ -1,4 +1,4 @@
-<form action="/robots/<% @robot.id %>" method="post">
+<form action="/robots/<%= @robot.id %>" method="post">
   <h3>Edit</h3>
   <input type="hidden" name="_method" value="PUT">
   <input type="text" name="robot[name]" value=" <% @robot.name %>">
@@ -8,5 +8,6 @@
   <input type="text" name="robot[birthdate]" value=" <% @robot.birthdate %>">
   <input type="text" name="robot[date_hired]" value=" <% @robot.date_hired %>">
   <input type="text" name="robot[department]" value=" <% @robot.department %>">
-  <input type='submit' class="btn btn-default]"/>
-</form>
+  <input class="btn btn-default" type='submit'/>
+</form><br>
+<a href="/" class="btn btn-info">Robot World Homepage</a><br>

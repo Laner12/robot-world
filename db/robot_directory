@@ -1,67 +1,19 @@
 ---
 robots:
-- id: 1
-  name: 
-  city: 
-  state: 
-  avatar: 
-  birthdate: 
-  date_hired: 
-  department: 
-- id: 2
-  name: 
-  city: 
-  state: 
-  avatar: 
-  birthdate: 
-  date_hired: 
-  department: 
-- id: 3
-  name: 
-  city: 
-  state: 
-  avatar: 
-  birthdate: 
-  date_hired: 
-  department: 
-- id: 4
-  name: dan
-  city: ''
-  state: ''
+- id: 9
+  name: " asadas"
+  city: " asdasd"
+  state: " asdasda"
+  avatar: " asdsad"
+  birthdate: " asdasd"
+  date_hired: " asdsd"
+  department: " asdsada"
+- id: 10
+  name: Lane
+  city: Arvada
+  state: Colorado
   avatar: ''
-  birthdate: ''
-  date_hired: ''
-  department: ''
-- id: 5
-  name: dan
-  city: ''
-  state: ''
-  avatar: ''
-  birthdate: ''
-  date_hired: ''
-  department: ''
-- id: 6
-  name: ''
-  city: ''
-  state: ''
-  avatar: ''
-  birthdate: ''
-  date_hired: ''
-  department: ''
-- id: 7
-  name: ''
-  city: ''
-  state: fjsd;lfjds
-  avatar: ''
-  birthdate: ''
-  date_hired: ''
-  department: ''
-- id: 8
-  name: ''
-  city: ''
-  state: ''
-  avatar: ''
-  birthdate: ''
-  date_hired: ''
-  department: ''
-total: 8
+  birthdate: 10/12/1603
+  date_hired: 12/10/1605
+  department: Laborer
+total: 10

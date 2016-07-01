@@ -1,11 +1,15 @@
 <h1>Robot Directory</h1>
+<a href="/" class="btn btn-info">Robot World Homepage</a><br>
 
 <% @robots.each do |robot| %>
-<h3><%= robot.id %>: <a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
-<a href="/robots/<%= robot.id %>/edit">Edit</a>
+<a href="/robots/<%= robot.id %>">
+<img src="https://robohash.org/<%= robot.name %>" alt="Picture of a robot" />
+</a>
+<h3><a href="/robots/<%= robot.id %>"><%= robot.name %></a></h3>
+<a class="btn btn-default" href="/robots/<%= robot.id %>/edit">Edit</a>
 
 <form action="/robots/<%= robot.id %>" method="post">
   <input type="hidden" name="_method" value="DELETE">
-  <input type="submit" value="Delete">
+  <input class="btn btn-danger"type="submit" value="Delete">
 </form>
 <% end %>

@@ -1,3 +1,13 @@
-<a href="/robots" class="btn btn-danger">Robot Directory</a>
+<a href="/robots" class="btn btn-info">Robot Directory</a>
 
 <h1><%= @robot.name %></h1>
+<p>
+  <img src="https://robohash.org/<%= @robot.name %>" alt="Picture of a robot" />
+</p>
+<ul>
+  <li>City: <%= @robot.city %></li>
+  <li>State: <%= @robot.state %></li>
+  <li>Birthdate: <%= @robot.birthdate %></li>
+  <li>Date Hired: <%= @robot.date_hired %></li>
+  <li>Department: <%= @robot.department %></li>
+</ul>
