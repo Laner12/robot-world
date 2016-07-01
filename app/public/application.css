@@ -1,0 +1,12 @@
+body {
+  background-color: rgb(42, 212, 167);
+}
+img {
+   padding:1px;
+   border:1px solid #021a40;
+   background-color:#ff0;
+}
+html {
+text-rendering: optimizeLegibility !important;
+-webkit-font-smoothing: antialiased !important;
+}
