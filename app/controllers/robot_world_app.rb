@@ -40,10 +40,6 @@ class RobotWorldApp < Sinatra::Base
     redirect "/robots"
   end
 
-  # def robot_directory
-  # database = YAML::Store.new('db/robot_directory')
-  # @robot_directory ||= RobotDirectory.new(database)
-  # end
   def robot_directory
     if ENV['RACK_ENV'] == "test"
       database = SQLite3::Database.new('db/robot_directory_test.db')
