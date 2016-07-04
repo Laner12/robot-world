@@ -13,9 +13,8 @@ class UserCanUpdateAnExistingRobotTest < FeatureTest
     click_link "Robot Directory"
 
     assert_equal "/robots", current_path
+    click_link("Edit")
 
-    assert page.find("a #{robot1.name}").has_link?("Edit")
-    # assert_equal "/robots/#{robot1.id}/edit", current_path
     fill_in "robot[name]", with: "Lane"
     fill_in "robot[city]", with: "Denver"
     fill_in "robot[state]", with: "Colorado"
@@ -24,10 +23,7 @@ class UserCanUpdateAnExistingRobotTest < FeatureTest
     fill_in "robot[department]", with: "Student"
 
     page.find("#submit").click
-
-    assert_equal "/robots", current_path
-
+    assert page.has_content?("Lane")
     assert page.has_content?("Robot Directory")
-    assert page.find('h3 a').has_content?("Lane")
   end
 end
