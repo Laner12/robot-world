@@ -1,9 +1,6 @@
-require_relative "../models/robot_directory"
-require_relative "../models/robot"
+require "sqlite3"
 
 class RobotWorldApp < Sinatra::Base
-  set :root, File.expand_path("..", __dir__)
-  set :method_override, true
 
   get "/" do
     erb :dashboard
@@ -44,7 +41,12 @@ class RobotWorldApp < Sinatra::Base
   end
 
   def robot_directory
-  database = YAML::Store.new('db/robot_directory')
-  @robot_directory ||= RobotDirectory.new(database)
+    if ENV['RACK_ENV'] == "test"
+      database = SQLite3::Database.new('db/robot_directory_test.db')
+    else
+      database = SQLite3::Database.new('db/robot_directory_development.db')
+    end
+    database.results_as_hash = true
+    RobotDirectory.new(database)
   end
 end
